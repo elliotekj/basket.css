@@ -64,9 +64,9 @@ input {
 	        box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .12);
 }
 
-input:focus {
-	border: 1px solid #abb1b8;
-}
+	input:focus {
+		border: 1px solid #abb1b8;
+	}
 
 /* --------------------------------------------------------------
 --- Basket Grid Setup 
