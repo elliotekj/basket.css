@@ -1,0 +1,160 @@
+/*---------------------------------------------------------------
+
+	Basket.css is a handy CSS file to kickstart your next project 
+	Written by Elliot Jackson | http://elliotj.me | @_eej
+	
+	You can use this freely in whatever project you want. You can 
+	build on it, modify it to suit your needs and use it in 
+	commercial products. Please do not redistribute it on another 
+	server or pass it off as your own work however.
+	
+	Enjoy!
+
+---------------------------------------------------------------*/
+
+/* --------------------------------------------------------------
+--- Page Layout & Basic Styles
+-------------------------------------------------------------- */
+
+* {
+	margin: 0;
+	padding: 0;	
+	-webkit-font-smoothing: antialiased;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+html { 
+	overflow-y: scroll; /* Forces vertical scrollbar to prevent jumpy page */
+}
+
+body {
+	background: #ffffff;
+	font: 13px/21px "Helvetica Neue", sans-serif;
+	color: #666;
+}
+
+img {
+	max-width: 100%; /* Make images responsive */
+}
+
+li { 
+	list-style: none; /* Remove bullets on lists */
+}
+
+a, a:visited {
+	color: #f56559;
+	text-decoration: none;
+}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+input {
+	outline: none;
+	border: none;
+	margin: 0;
+	padding: 5px 7px;
+	color: #888888;
+	border: 1px solid #c7cace;
+	-webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .12);
+	   -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .12);
+	        box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .12);
+}
+
+input:focus {
+	border: 1px solid #abb1b8;
+}
+
+/* --------------------------------------------------------------
+--- Basket Grid Setup 
+-------------------------------------------------------------- */
+
+.basket {
+	max-width: 960px;
+	margin: auto;
+	padding-bottom: 20px;
+}
+	
+	/* -- Fix width for floated elements -- */
+	.basket:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+[class*='basket-'] {
+  float: left;
+  display: inline-block;
+  padding: 20px 10px 0 10px;
+}
+
+/* --------------------------------------------------------------
+--- Basket Grid
+-------------------------------------------------------------- */
+
+.basket-whole     { width: 100%;   }
+.basket-half      { width: 50%;    }
+.basket-third     { width: 33.33%; }
+.basket-quarter   { width: 25%;    }
+.basket-fifth     { width: 20%;    }
+
+@media only screen and (max-width: 480px) {
+	.basket-whole,
+	.basket-half,
+	.basket-third,
+	.basket-quarter,
+	.basket-fifth { width: 100%;   }
+}
+
+/* --------------------------------------------------------------
+--- Typography
+-------------------------------------------------------------- */
+
+h1 {
+	font-size: 1.5em; /* 24px */
+	line-height: 1.75em; /* 28px */
+}
+
+h2 {
+	font-size: 1.25em; /* 20px */
+	line-height: 1.375em; /* 22px */
+}
+
+h3 {
+	font-size: 1em; /* 16px */
+	line-height: 1.25em; /* 20px */
+}
+
+h4 {
+	font-size: 0.875em; /* 14px */
+	line-height: 1.125em; /* 18px */
+}
+
+h5 {
+	font-size: 0.75em; /* 12px */
+	line-height: 1.125em; /* 18px */
+}
+
+h6 {
+	font-size: 0.625em; /* 10px */
+	line-height: 1em; /* 16px */
+}
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+
+p {
+	margin-bottom: 1.125em; /* 18px */
+}
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+
+/* --------------------------------------------------------------
+--- Your site Styles
+-------------------------------------------------------------- */
+
+
