@@ -11,4 +11,4 @@ You can use this freely in whatever project you want. You can build on it, modif
 If you like this and use it often then why not consider <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=TYPX4JZZAJS62">buying me a drink</a>. Your support is greatly appreciated!
 
 ## See it in action
-If you want to see this in action <a href="http://elliotj.me/basketcss">click here</a>. If you think it will suit your needs, give it a try.
+If you want to see this in action <a href="http://craftco.de/css">click here</a>. If you think it will suit your needs, give it a try.
