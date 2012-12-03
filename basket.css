@@ -37,6 +37,7 @@ body {
 
 img {
     max-width: 100%; /* Make images responsive */
+    display: block; /* Contributed by Tucker Whitehouse */
 }
 
 li { 
@@ -113,39 +114,39 @@ input {
 -------------------------------------------------------------- */
 
 h1 {
-    font-size: 1.5em; /* 24px */
-    line-height: 1.75em; /* 28px */
+    font-size: 1.5em;
+    line-height: 1.75em;
 }
 
 h2 {
-    font-size: 1.25em; /* 20px */
-    line-height: 1.375em; /* 22px */
+    font-size: 1.25em;
+    line-height: 1.375em;
 }
 
 h3 {
-    font-size: 1em; /* 16px */
-    line-height: 1.25em; /* 20px */
+    font-size: 1em;
+    line-height: 1.25em;
 }
 
 h4 {
-    font-size: 0.875em; /* 14px */
-    line-height: 1.125em; /* 18px */
+    font-size: 0.875em;
+    line-height: 1.125em;
 }
 
 h5 {
-    font-size: 0.75em; /* 12px */
-    line-height: 1.125em; /* 18px */
+    font-size: 0.75em;
+    line-height: 1.125em;
 }
 
 h6 {
-    font-size: 0.625em; /* 10px */
-    line-height: 1em; /* 16px */
+    font-size: 0.625em;
+    line-height: 1em;
 }
 
 h1, h2, h3, h4, h5, h6 { font-weight: normal; }
 
 p {
-    margin-bottom: 1.125em; /* 18px */
+    margin-bottom: 1.125em;
 }
 
     p:last-child {
