@@ -1,160 +1,164 @@
-/*---------------------------------------------------------------
+/*******************************************************************************
+ * Basket.css is a handy CSS file to kickstart your next project 
+ * Written by Elliot Jackson | http://craftco.de | @_eej
+ * 
+ * You can use this freely in whatever project you want. You can 
+ * build on it, modify it to suit your needs and use it in 
+ * commercial products. Please do not redistribute it on another 
+ * server or pass it off as your own work however.
+ *
+ * Enjoy!
+ ******************************************************************************/
 
-    Basket.css is a handy CSS file to kickstart your next project 
-    Written by Elliot Jackson | http://elliotj.me | @_eej
-
-    You can use this freely in whatever project you want. You can 
-    build on it, modify it to suit your needs and use it in 
-    commercial products. Please do not redistribute it on another 
-    server or pass it off as your own work however.
-
-    Enjoy!
-
----------------------------------------------------------------*/
-
-/* --------------------------------------------------------------
---- Page Layout & Basic Styles
--------------------------------------------------------------- */
+/*******************************************************************************
+ * PAGE LAYOUT AND BASIC STYLES
+ ******************************************************************************/
 
 * {
-    margin: 0;
-    padding: 0;    
-    -webkit-font-smoothing: antialiased;
-         -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-                 box-sizing: border-box;
+  margin: 0;
+  padding: 0;    
+  -webkit-font-smoothing: antialiased;
+       -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+               box-sizing: border-box;
 }
 
 html { 
-    overflow-y: scroll; /* Forces vertical scrollbar to prevent jumpy page */
+  overflow-y: scroll; /* Forces vertical scrollbar to prevent jumpy page */
 }
 
 body {
-    background: #ffffff;
-    font: 13px/21px "Helvetica Neue", sans-serif;
-    color: #666;
+  background: #fff;
+  font: 13px/21px "Helvetica Neue", sans-serif;
+  color: #666;
 }
 
 img {
-    max-width: 100%; /* Make images responsive */
-    display: block; /* Contributed by Tucker Whitehouse */
+  max-width: 100%; /* Make images responsive */
+  display: block; /* Contributed by Tucker Whitehouse */
 }
 
 li { 
-    list-style: none; /* Remove bullets on lists */
+  list-style: none; /* Remove bullets on lists */
 }
 
-a, a:visited {
-    color: #f56559;
-    text-decoration: none;
+a, 
+a:visited {
+  color: #f56559;
+  text-decoration: none;
 }
 
-    a:hover {
-        text-decoration: underline;
-    }
+  a:hover {
+    text-decoration: underline;
+  }
 
 input {
-    outline: none;
-    margin: 0;
-    padding: 5px 7px;
-    color: #888888;
-    border: 1px solid #c7cace;
-    -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .12);
-       -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .12);
-            box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .12);
+  outline: none;
+  margin: 0;
+  padding: 5px 7px;
+  color: #888;
+  border: 1px solid #c7cace;
+  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .12);
+     -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .12);
+          box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .12);
 }
 
-    input:focus {
-        border: 1px solid #abb1b8;
-    }
+  input:focus {
+    border: 1px solid #abb1b8;
+  }
 
-/* --------------------------------------------------------------
---- Basket Grid Setup 
--------------------------------------------------------------- */
+/*******************************************************************************
+ * BASIC GRID SETUP
+ ******************************************************************************/
 
 .basket {
-    max-width: 960px;
-    margin: auto;
-    padding-bottom: 20px;
+  max-width: 960px;
+  margin: auto;
+  padding-bottom: 20px;
 }
 
-    /* -- Fix width for floated elements -- */
-    .basket:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+  /* Fix width for floated elements */
+  .basket:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 [class*='basket-'] {
-    float: left;
-    display: inline-block;
-    padding: 20px 10px 0 10px;
+  float: left;
+  display: inline-block;
+  padding: 20px 10px 0 10px;
 }
 
-/* --------------------------------------------------------------
---- Basket Grid
--------------------------------------------------------------- */
+/*******************************************************************************
+ * BASKET GRID
+ ******************************************************************************/
 
-.basket-whole     { width: 100%;   }
-.basket-half      { width: 50%;    }
-.basket-third     { width: 33.33%; }
-.basket-quarter   { width: 25%;    }
-.basket-fifth     { width: 20%;    }
+.basket-whole   { width: 100%;   }
+.basket-half    { width: 50%;    }
+.basket-third   { width: 33.33%; }
+.basket-quarter { width: 25%;    }
+.basket-fifth   { width: 20%;    }
 
 @media only screen and (max-width: 480px) {
-    .basket-whole,
-    .basket-half,
-    .basket-third,
-    .basket-quarter,
-    .basket-fifth { width: 100%;   }
+  .basket-whole,
+  .basket-half,
+  .basket-third,
+  .basket-quarter,
+  .basket-fifth { width: 100%;   }
 }
 
-/* --------------------------------------------------------------
---- Typography
--------------------------------------------------------------- */
+/*******************************************************************************
+ * TYPOGRAPHY
+ ******************************************************************************/
 
 h1 {
-    font-size: 1.5em;
-    line-height: 1.75em;
+  font-size: 1.5em;
+  line-height: 1.75em;
 }
 
 h2 {
-    font-size: 1.25em;
-    line-height: 1.375em;
+  font-size: 1.25em;
+  line-height: 1.375em;
 }
 
 h3 {
-    font-size: 1em;
-    line-height: 1.25em;
+  font-size: 1em;
+  line-height: 1.25em;
 }
 
 h4 {
-    font-size: 0.875em;
-    line-height: 1.125em;
+  font-size: 0.875em;
+  line-height: 1.125em;
 }
 
 h5 {
-    font-size: 0.75em;
-    line-height: 1.125em;
+  font-size: 0.75em;
+  line-height: 1.125em;
 }
 
 h6 {
-    font-size: 0.625em;
-    line-height: 1em;
+  font-size: 0.625em;
+  line-height: 1em;
 }
 
-h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { 
+  font-weight: normal; 
+}
 
 p {
-    margin-bottom: 1.125em;
+  margin-bottom: 1.125em;
 }
 
-    p:last-child {
-        margin-bottom: 0;
-    }
+  p:last-child {
+    margin-bottom: 0;
+  }
 
-/* --------------------------------------------------------------
---- Your site Styles
--------------------------------------------------------------- */
-
-
+/*******************************************************************************
+ * YOUR SITE STYLES
+ ******************************************************************************/
